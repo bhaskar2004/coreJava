@@ -4,7 +4,7 @@ public class bank{
     public long getAcc(){
         return accNo;
     }
-    public void seytAcc(long accNo){
+    public void setAcc(long accNo){
         this.accNo=accNo;
     }
     public bank(long accNo , int pin){
@@ -16,5 +16,6 @@ public class bank{
         bank b = new bank(12345,123);
 
         System.out.println(b.accNo);
+        System.out.println(b.pin);
     }
 }
