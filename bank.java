@@ -17,5 +17,7 @@ public class bank{
 
         System.out.println(b.accNo);
         System.out.println(b.pin);
+        b.setAcc(321);
+        System.out.println(b.accNo);
     }
 }
