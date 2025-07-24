@@ -67,6 +67,14 @@ class driver{
                         System.out.println("amount added successfully !!");
                         System.out.println("current balance is :" + balance);
                     }
+                    else {
+                        System.out.println("invalid pin try again later");
+                    }
+                    break;
+
+                case 6:
+                    System.out.println("debit account details ");
+                    c.debitacc(45876);
                     break;
                 case 7:
                     System.out.println("enter amt to be withdraw");
@@ -78,14 +86,11 @@ class driver{
                         System.out.println("amount withdrawn successfully !!");
                         System.out.println("current balance is :" + balance);
                     }
+                    else {
+                        System.out.println("invalid pin try again later ...");
+                    }
                     break;
-
-
-
-                case 6:
-                    System.out.println("debit account details ");
-                    c.debitacc(45876);
-                    break;
+                    
                 case 0:
                     System.out.println(" thank you :) ");
                     return;
