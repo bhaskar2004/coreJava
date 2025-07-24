@@ -16,7 +16,7 @@ public class driver {
 
         switch (choice) {
             case 1:
-                System.out.println("calculato1");
+                System.out.println("calculator1");
 
                 c1.add(num1,num2);
                 c1.sub(num1,num2);
@@ -27,7 +27,7 @@ public class driver {
 
                 break;
             case 2:
-                System.out.println("calcilator2");
+                System.out.println("calculator2");
 
                 c2.add(num1,num2);
                 c2.sub(num1,num2);

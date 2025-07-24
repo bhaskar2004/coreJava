@@ -1,7 +1,7 @@
 package objectLoadingProcess;
 
 public class parent {
-    {
+    static {
         System.out.println("parent is loaded");
     }
     void pamper(){
@@ -9,7 +9,7 @@ public class parent {
     }
 }
 class child extends parent{
-    {
+    static {
         System.out.println("child is loaded");
     }
     void respect(){
