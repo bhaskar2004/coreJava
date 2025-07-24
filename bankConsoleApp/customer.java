@@ -1,6 +1,6 @@
 package bankConsoleApp;
 import java.util.Scanner;
-public class customer implements atm{
+public class customer extends atm{
     @Override
     public void display() {
         System.out.println("bank name :"+bname);
@@ -90,7 +90,7 @@ class driver{
                         System.out.println("invalid pin try again later ...");
                     }
                     break;
-                    
+
                 case 0:
                     System.out.println(" thank you :) ");
                     return;

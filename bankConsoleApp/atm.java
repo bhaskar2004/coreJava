@@ -1,6 +1,6 @@
 package bankConsoleApp;
 
-public interface atm extends bank{
+public abstract class atm extends bank{
     String atmLoc="sjcit";
-    void disatm();
+    abstract void disatm();
 }

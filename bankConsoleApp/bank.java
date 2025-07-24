@@ -1,10 +1,27 @@
 package bankConsoleApp;
 
-public interface bank {
+abstract class bank {
     String bname="xyzz";
+
     String bLoc="chikkaballapura";
 
-    void display();
-    void debitacc(int dno);
-    void savingsacc(int bal);
+    public String getBname() {
+        return bname;
+    }
+
+    public void setBname(String bname) {
+        this.bname = bname;
+    }
+
+    public String getbLoc() {
+        return bLoc;
+    }
+
+    public void setbLoc(String bLoc) {
+        this.bLoc = bLoc;
+    }
+
+    abstract void display();
+    abstract void debitacc(int dno);
+   abstract void savingsacc(int bal);
 }
