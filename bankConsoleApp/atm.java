@@ -1,6 +1,15 @@
 package bankConsoleApp;
 
 public abstract class atm extends bank{
-    String atmLoc="sjcit";
+    private String atmLoc="sjcit";
+
+    public String getAtmLoc() {
+        return atmLoc;
+    }
+
+    public void setAtmLoc(String atmLoc) {
+        this.atmLoc = atmLoc;
+    }
+
     abstract void disatm();
 }

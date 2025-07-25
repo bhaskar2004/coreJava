@@ -1,9 +1,9 @@
 package bankConsoleApp;
 
 abstract class bank {
-    String bname="xyzz";
+    private String bname="xyzz";
 
-    String bLoc="chikkaballapura";
+    private String bLoc="chikkaballapura";
 
     public String getBname() {
         return bname;
@@ -21,7 +21,9 @@ abstract class bank {
         this.bLoc = bLoc;
     }
 
+
     abstract void display();
     abstract void debitacc(int dno);
    abstract void savingsacc(int bal);
+   abstract void bankLocations();
 }
