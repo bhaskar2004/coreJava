@@ -26,4 +26,6 @@ abstract class bank {
     abstract void debitacc(int dno);
    abstract void savingsacc(int bal);
    abstract void bankLocations();
+
+
 }

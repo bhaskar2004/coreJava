@@ -12,4 +12,5 @@ public abstract class atm extends bank{
     }
 
     abstract void disatm();
+
 }
