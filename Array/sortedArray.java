@@ -1,18 +1,21 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class maxEle {
-    public static void max(int[]a){
-        int max=0;
+public class sortedArray {
+    public static void sort(int []a){
         for(int i=0;i<a.length;i++){
-            if (max<a[i]){
-                max=a[i];
+            for(int j=0;j<a.length-1;j++) {
+                if (a[j + 1] < a[j]) {
+                    int temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j+ 1] = temp;
+                }
             }
         }
-        System.out.println(max +" the max element .");
+        System.out.println(Arrays.toString(a));
     }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("enter size of array");
@@ -23,6 +26,7 @@ public class maxEle {
         for (int i=0 ;i<n;i++){
             a[i]=in.nextInt();
         }
-        max(a);
+        sort(a);
     }
+
 }

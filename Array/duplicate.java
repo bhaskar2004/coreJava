@@ -1,18 +1,9 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class maxEle {
-    public static void max(int[]a){
-        int max=0;
-        for(int i=0;i<a.length;i++){
-            if (max<a[i]){
-                max=a[i];
-            }
-        }
-        System.out.println(max +" the max element .");
-    }
-
+public class duplicate {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("enter size of array");
@@ -23,6 +14,15 @@ public class maxEle {
         for (int i=0 ;i<n;i++){
             a[i]=in.nextInt();
         }
-        max(a);
+
+        Arrays.sort(a);
+        int []b=new int[a.length];
+        for(int i=0;i<a.length-1;i++){
+            if(a[i]!=a[i+1]){
+                b[i]=a[i];
+                b[i+1]=a[i+1];
+            }
+        }
+        System.out.println(Arrays.toString(b));
     }
 }

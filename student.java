@@ -27,7 +27,6 @@ public class student {
         this.sub1=sub1;
         this.sub2=sub2;
     }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         student s1=new student("ram",40 ,50);

@@ -1,8 +1,18 @@
 package Array;
 
+import java.util.Scanner;
+
 public class sorting {
     public static void main(String[] args) {
-        int []a={29,3,1,45,2,33,11};
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter size of array");
+        int n =in.nextInt();
+        int[] a = new int[n];
+        System.out.println("enter the elements of array");
+        //input
+        for (int i=0 ;i<n;i++){
+            a[i]=in.nextInt();
+        }
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a.length-1;j++){
                 if(a[j]>a[j+1]){
